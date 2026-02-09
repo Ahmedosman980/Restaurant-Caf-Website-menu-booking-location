@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista - Restaurant & Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Bella Vista</h1>
+                <span>Restaurant & Café</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-page="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link" data-page="menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#booking" class="nav-link" data-page="booking">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#location" class="nav-link" data-page="location">Location</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Bella Vista</h1>
+                    <p>Experience culinary excellence in the heart of the city</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary" data-page="menu">View Menu</a>
+                        <a href="#booking" class="btn btn-secondary" data-page="booking">Book Table</a>
+                    </div>
+                </div>
+                <div class="hero-overlay"></div>
+            </div>
+
+            <section class="about">
+                <div class="container">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2010, Bella Vista brings together the finest traditions of Italian and Mediterranean cuisine with a modern twist. Our passionate chefs use only the freshest local ingredients to create memorable dining experiences.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <h3>🍽️ Fresh Ingredients</h3>
+                            <p>Locally sourced, seasonal produce</p>
+                        </div>
+                        <div class="feature">
+                            <h3>👨‍🍳 Expert Chefs</h3>
+                            <p>Culinary masters with decades of experience</p>
+                        </div>
+                        <div class="feature">
+                            <h3>🌟 Exceptional Service</h3>
+                            <p>Attentive staff dedicated to your experience</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hours">
+                <div class="container">
+                    <h2>Opening Hours</h2>
+                    <div class="hours-grid">
+                        <div class="hours-item">
+                            <h3>Monday - Friday</h3>
+                            <p>11:00 AM - 10:00 PM</p>
+                        </div>
+                        <div class="hours-item">
+                            <h3>Saturday</h3>
+                            <p>10:00 AM - 11:00 PM</p>
+                        </div>
+                        <div class="hours-item">
+                            <h3>Sunday</h3>
+                            <p>10:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Menu Page -->
+        <section id="menu" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Our Menu</h1>
+                    <p>Discover our exquisite selection of dishes</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="menu-categories">
+                    <button class="category-btn active" data-category="appetizers">Appetizers</button>
+                    <button class="category-btn" data-category="mains">Main Courses</button>
+                    <button class="category-btn" data-category="desserts">Desserts</button>
+                    <button class="category-btn" data-category="beverages">Beverages</button>
+                </div>
+
+                <div class="menu-content">
+                    <div class="category-section active" id="appetizers">
+                        <h2>Appetizers</h2>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Bruschetta Classica</h3>
+                                    <p>Grilled bread with tomatoes, basil, garlic, and olive oil</p>
+                                </div>
+                                <div class="item-price">$8.50</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Calamari Fritti</h3>
+                                    <p>Crispy fried squid rings with marinara sauce</p>
+                                </div>
+                                <div class="item-price">$12.00</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Antipasto Board</h3>
+                                    <p>Selection of cured meats, cheeses, olives, and bread</p>
+                                </div>
+                                <div class="item-price">$18.00</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Caprese Salad</h3>
+                                    <p>Fresh mozzarella, tomatoes, basil, balsamic glaze</p>
+                                </div>
+                                <div class="item-price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-section" id="mains">
+                        <h2>Main Courses</h2>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Spaghetti Carbonara</h3>
+                                    <p>Pasta with eggs, pancetta, pecorino cheese, black pepper</p>
+                                </div>
+                                <div class="item-price">$16.50</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Osso Buco</h3>
+                                    <p>Braised veal shanks with vegetables, white wine and broth</p>
+                                </div>
+                                <div class="item-price">$28.00</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Grilled Salmon</h3>
+                                    <p>Atlantic salmon with lemon butter sauce and seasonal vegetables</p>
+                                </div>
+                                <div class="item-price">$24.00</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Margherita Pizza</h3>
+                                    <p>Fresh mozzarella, tomatoes, basil on wood-fired crust</p>
+                                </div>
+                                <div class="item-price">$14.50</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Filet Mignon</h3>
+                                    <p>8oz beef tenderloin with red wine reduction and roasted potatoes</p>
+                                </div>
+                                <div class="item-price">$32.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-section" id="desserts">
+                        <h2>Desserts</h2>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Tiramisu</h3>
+                                    <p>Coffee-soaked ladyfingers, mascarpone, cocoa</p>
+                                </div>
+                                <div class="item-price">$7.50</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Panna Cotta</h3>
+                                    <p>Vanilla bean custard with berry compote</p>
+                                </div>
+                                <div class="item-price">$6.50</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Cannoli</h3>
+                                    <p>Crispy shell with ricotta, chocolate, pistachios</p>
+                                </div>
+                                <div class="item-price">$7.00</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Gelato Selection</h3>
+                                    <p>Three scoops of your choice from our flavors</p>
+                                </div>
+                                <div class="item-price">$6.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-section" id="beverages">
+                        <h2>Beverages</h2>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>House Wine</h3>
+                                    <p>Red or white selection by the glass</p>
+                                </div>
+                                <div class="item-price">$8.00</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Craft Cocktails</h3>
+                                    <p>Signature mixed drinks and classic cocktails</p>
+                                </div>
+                                <div class="item-price">$12.00</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Artisan Coffee</h3>
+                                    <p>Locally roasted espresso, cappuccino, latte</p>
+                                </div>
+                                <div class="item-price">$4.50</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h3>Fresh Juices</h3>
+                                    <p>Orange, apple, carrot, or seasonal blend</p>
+                                </div>
+                                <div class="item-price">$5.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Page -->
+        <section id="booking" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Make a Reservation</h1>
+                    <p>Book your table for an unforgettable dining experience</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="booking-form-container">
+                    <form id="reservation-form" class="reservation-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8+ Guests</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="17:30">5:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="occasion">Special Occasion (Optional)</label>
+                            <select id="occasion" name="occasion">
+                                <option value="">None</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="business">Business Dinner</option>
+                                <option value="date">Date Night</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requests">Special Requests (Optional)</label>
+                            <textarea id="requests" name="requests" rows="4" placeholder="Any dietary restrictions or special requests?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Make Reservation</button>
+                    </form>
+
+                    <div class="booking-info">
+                        <h3>Reservation Information</h3>
+                        <ul>
+                            <li>Reservations can be made up to 30 days in advance</li>
+                            <li>For parties of 8 or more, please call us directly</li>
+                            <li>We hold reservations for 15 minutes</li>
+                            <li>Cancellation required 24 hours in advance</li>
+                        </ul>
+                        <div class="contact-info">
+                            <h4>Call Us</h4>
+                            <p>📞 (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Page -->
+        <section id="location" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Find Us</h1>
+                    <p>Visit our restaurant in the heart of downtown</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="location-content">
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb8b6f1%3A0x4b5c5b5b5b5b5b5b!2sOne%20World%20Trade%20Center!5e0!3m2!1sen!2sus!4v1234567890"
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="location-info">
+                        <div class="address-section">
+                            <h3>Address</h3>
+                            <p>📍 123 Gourmet Street<br>
+                            Downtown District<br>
+                            New York, NY 10001</p>
+                        </div>
+
+                        <div class="contact-section">
+                            <h3>Contact Information</h3>
+                            <p>📞 (555) 123-4567<br>
+                            📧 info@bellavista.com<br>
+                            🌐 www.bellavista.com</p>
+                        </div>
+
+                        <div class="hours-section">
+                            <h3>Opening Hours</h3>
+                            <div class="hours-list">
+                                <div class="hours-row">
+                                    <span>Monday - Friday</span>
+                                    <span>11:00 AM - 10:00 PM</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span>Saturday</span>
+                                    <span>10:00 AM - 11:00 PM</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span>Sunday</span>
+                                    <span>10:00 AM - 9:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="transportation-section">
+                            <h3>Getting Here</h3>
+                            <p><strong>Subway:</strong> Lines A, C, E, 1, 2, 3 to World Trade Center</p>
+                            <p><strong>Bus:</strong> Routes M20, M22, X1, X2, X3</p>
+                            <p><strong>Parking:</strong> Street parking available after 6 PM<br>
+                            Nearest garage: 24/7 Parking at 456 Commerce St</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Vista</h3>
+                    <p>Experience culinary excellence in the heart of the city</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-page="home">Home</a></li>
+                        <li><a href="#menu" data-page="menu">Menu</a></li>
+                        <li><a href="#booking" data-page="booking">Reservations</a></li>
+                        <li><a href="#location" data-page="location">Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📞 (555) 123-4567<br>
+                    📧 info@bellavista.com<br>
+                    📍 123 Gourmet Street, NY 10001</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bella Vista Restaurant & Café. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Reservation Confirmed!</h3>
+            <p>Thank you for your reservation. We look forward to serving you!</p>
+            <button class="btn btn-primary close-modal">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
